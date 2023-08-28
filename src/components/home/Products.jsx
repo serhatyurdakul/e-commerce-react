@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { getCategoryProducts, getProducts } from "../../redux/ProductSlice";
 import Loading from "../Loading";
 import Product from "./Product";
 import ReactPaginate from "react-paginate";
+import { getCategoryProducts, getProducts } from "../../redux/productSlice";
 
 const Products = ({ category, sort }) => {
   const dispatch = useDispatch();
